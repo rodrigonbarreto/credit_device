@@ -19,6 +19,7 @@ Or install it yourself as:
 
 ## Usage
 
+### config file
 ```
       CreditDevice.configure do |config|
         config.url = "url"
@@ -26,6 +27,30 @@ Or install it yourself as:
         config.password = "password"
       end
 ```
+### check status
+```
+# check the status after setup your configuration CreaditDevice 
+CreditDevice::Status.check_status
+
+```
+
+### get all companies by term
+
+```
+@company = CreditDevice::Company.new("ABN", "NL",1)
+@company.get_all
+```
+
+### get all companies with filter by type:
+* ex: by reg_number
+* check all list of parameter here: https://inquiry.creditandcollection.nl/docs/company.html
+* parameters for Comapny.new is : ```def initialize(term, country, page = 1, **parameter)```
+
+```
+@company = CreditDevice::Company.new("97123456", "NL",1, type: CreditDevice::Type::QueryParameterType::REG_NUMBER)
+@company.get_all
+```
+
 
 ## Contributing
 
