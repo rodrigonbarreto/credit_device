@@ -19,7 +19,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+      CreditDevice.configure do |config|
+        config.url = "url"
+        config.username = "username"
+        config.password = "password"
+      end
+```
 
 ## Contributing
 
@@ -32,13 +38,3 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Code of Conduct
 
 Everyone interacting in the CreditDevice project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/rodrigobarreto/credit_device/blob/master/CODE_OF_CONDUCT.md).
-
-
-# Config your application with
-```
-      CreditDevice.configure do |config|
-        config.url = "url"
-        config.username = "username"
-        config.password = "password"
-      end
-```
