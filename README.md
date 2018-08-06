@@ -1,5 +1,7 @@
 # CreditDevice
 
+* That gem is not ready yet, is missing reports and few stuffs
+
 
 ## Installation
 
