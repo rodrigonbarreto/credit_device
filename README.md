@@ -59,18 +59,18 @@ CreditDevice::Status.check_status
 
 ex: using  Inquiry above:
 ```
-# D44CI701 => type -> all types on link: [link](https://inquiry.creditandcollection.nl/docs/inquiry.html)
+# D44CI701 => type -> all types on  https://inquiry.creditandcollection.nl/docs/inquiry.html
 # l7Ox1kNbDBaL3ljSsWZi+A== => company_id
 # NL = country language
-@inquery = CreditDevice::Inquiry.new("D44CI701", "l7Ox1kNbDBaL3ljSsWZi+A==", "NL")
+@inquery = CreditDevice::Inquiry.new("D44CI701", "l7Ox1kNbDBaL3ljSs12asd==", "NL")
 ```
 
 ### GET Report from path or company_id 
 
 ````
-CreditDevice::Report.new("inquiries/153065/").request_report 
+CreditDevice::Report.new("inquiries/150987/").request_report 
 or
-CreditDevice::Report.new(nil, inquiry_id: 153044).request_report
+CreditDevice::Report.new(nil, inquiry_id: 150987).request_report
 ````
 ## Contributing
 
