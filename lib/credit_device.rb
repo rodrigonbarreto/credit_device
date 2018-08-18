@@ -1,12 +1,15 @@
 require "rest-client"
 require "json"
 require "credit_device/type/query_parameter_type"
+require "credit_device/type/product_type"
 require "credit_device/version"
 require "credit_device/base"
 require "credit_device/client"
 require "credit_device/configuration"
 require "credit_device/status"
 require "credit_device/company"
+require "credit_device/inquery"
+require "credit_device/report"
 require "credit_device/base"
 
 

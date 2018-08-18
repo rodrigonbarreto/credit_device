@@ -54,6 +54,24 @@ CreditDevice::Status.check_status
 ```
 
 
+
+### Get Inquiry from the company:
+
+ex: using  Inquiry above:
+```
+# D44CI701 => type -> all types on link: [link](https://inquiry.creditandcollection.nl/docs/inquiry.html)
+# l7Ox1kNbDBaL3ljSsWZi+A== => company_id
+# NL = country language
+@inquery = CreditDevice::Inquiry.new("D44CI701", "l7Ox1kNbDBaL3ljSsWZi+A==", "NL")
+```
+
+### GET Report from path or company_id 
+
+````
+CreditDevice::Report.new("inquiries/153065/").request_report 
+or
+CreditDevice::Report.new(nil, inquiry_id: 153044).request_report
+````
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/rodrigobarreto/credit_device. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.

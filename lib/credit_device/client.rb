@@ -1,3 +1,5 @@
+require 'base64'
+
 module CreditDevice
   class Client
     def initialize(type, path, params = {})
