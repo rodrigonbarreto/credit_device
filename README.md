@@ -83,3 +83,7 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Code of Conduct
 
 Everyone interacting in the CreditDevice project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/rodrigobarreto/credit_device/blob/master/CODE_OF_CONDUCT.md).
+
+
+## rubygems page
+The gem is available in [Ruby gems](https://rubygems.org/gems/credit_device).
