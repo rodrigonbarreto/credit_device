@@ -86,4 +86,4 @@ Everyone interacting in the CreditDevice project’s codebases, issue trackers, 
 
 
 ## rubygems page
-The gem is available in [Ruby gems](https://rubygems.org/gems/credit_device).
+The gem is available in [Credit Device](https://rubygems.org/gems/credit_device).
